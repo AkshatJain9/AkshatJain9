@@ -8,8 +8,8 @@ Bachelor of Advanced Computing (Honours)
 
 
 ### Current Projects:
-Daily Crypto Price Predictor: Using only daily data, movements in key cryptocurrency prices are predicted using basic regression methods.
-(Future) Binance Crypto Trader: Automated Trading Bot based on short-term data analytic algorithms
+**Daily Crypto Price Predictor:** Using only daily data, movements in key cryptocurrency prices are predicted using basic regression methods.
+**(Future) Binance Crypto Trader:** Automated Trading Bot based on short-term data analytic algorithms
 
 
 
