@@ -1,19 +1,15 @@
-Akshat Jain
+# Akshat Jain
 
-Australian National University (ANU)
+### About Me:
+I am a current CS student with a strong interest in Data Analytics and Machine Learning. I am looking to gain skills in Software Development and currently work as a Database Administrator. I have experience in Java, C++, Python and SQL.
+
+Currently Studying at: Australian National University (ANU) in Canberra, Australia
 Bachelor of Advanced Computing (Honours)
 
-CURRENT PROJECTS:
-PDFReader: Automated python script to read and write information from PDF invoices into Excel Datasheets
 
-Binance Crypto Trader: Automated Trading Bot based on short-term data analtic algorithms
-
-
-COMPLETED PROJECTS:
-N/A
+### Current Projects:
+Daily Crypto Price Predictor: Using only daily data, movements in key cryptocurrency prices are predicted using basic regression methods.
+(Future) Binance Crypto Trader: Automated Trading Bot based on short-term data analytic algorithms
 
 
 
-
-LOOKING FOR:
-Experience in Web Development
