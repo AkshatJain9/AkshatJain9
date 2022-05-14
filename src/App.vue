@@ -1,81 +1,161 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
-</script>
-
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
+  <div id="app">
+    <main>
+      <div class="search-box">
+        <input type="text" class="search-bar" placeholder="Search..." v-model="query" @keypress="fetchWeather"/>
+      </div>
 
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-    </div>
-  </header>
+      <div class="weather=wrap" v-if="typeof weather.main != 'undefined'">
+        <div class="location-box">
+          <div class="location">
+            {{ weather.name }}, {{ weather.sys.country }}
+          </div>
+          <div class="date">
+            {{ dateBuilder() }}
+          </div>
 
-  <main>
-    <TheWelcome />
-  </main>
+          <div class="weather-box">
+            <div class="temp">{{ Math.round(weather.main.temp) }}°c</div>
+            <div class="weather">{{ weather.weather[0].main }}</div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
 </template>
 
+
+<script>
+  export default {
+    name: 'app',
+    data () {
+      return {
+        weather_api: '08d19d2cfc7606d7d78082f4185a934b',
+        url_base: 'http://api.openweathermap.org/data/2.5/',
+        query:'',
+        weather: {
+
+        }
+      };
+    },
+    methods: {
+      fetchWeather(e) {
+        if (e.key == "Enter") {
+          fetch(`${this.url_base}weather?q=${this.query}&units=metric&APPID=${this.weather_api}`)
+          .then(res => {
+            return res.json();
+          }).then(this.setResults);
+        }
+      },
+      setResults (results) {
+          this.weather = results;
+      },
+
+      dateBuilder () {
+      let d = new Date();
+      let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+      let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+      let day = days[d.getDay()];
+      let date = d.getDate();
+      let month = months[d.getMonth()];
+      let year = d.getFullYear();
+      return `${day} ${date} ${month} ${year}`;
+    }
+    }
+  }
+</script>
+
+
+
 <style>
-@import './assets/base.css';
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'montserrat', sans-serif;
+}
 
 #app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-
-  font-weight: normal;
-}
-
-header {
-  line-height: 1.5;
-}
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-a,
-.green {
-  text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
+  background-image: url('./assets/cold-bg.jpg');
+  background-size:contain;
+  background-position: bottom;
   transition: 0.4s;
 }
 
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
+main {
+  min-height: 200vh;
+  padding: 25px;
+
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.25), rgba(0,0,0,0.75));
 }
 
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
+.search-box {
+  width: 100%;
+  margin-bottom: 30px;
+}
 
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
-  }
+.search-box .search-bar {
+  display: block;
+  width: 100%;
+  padding: 15px;
 
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
+  color:#313131;
+  font-size: 20px;
 
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
+  appearance: none;
+  border: none;
+  outline: none;
+  background: none;
 
-  .logo {
-    margin: 0 2rem 0 0;
-  }
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.25);
+  background-color: rgba(255,255,255,0.5);
+  border-radius: 0px 16px 0px 16px;
+  transition: 0.4s;
+}
+
+.search-box .search-bar:focus {
+  box-shadow: 0px 0px 16px rgba(0,0,0,0.25);
+  background-color: rgba(255,255,255,0.75);
+  border-radius: 16px 0px 16px 0px;
+}
+
+.location-box .location {
+  color: #FFF;
+  font-size: 32px;
+  font-weight: 500;
+  text-align: center;
+  text-shadow: 1px 3px rgba(0, 0, 0, 0.25);
+}
+.location-box .date {
+  color: #FFF;
+  font-size: 20px;
+  font-weight: 300;
+  font-style: italic;
+  text-align: center;
+}
+.weather-box {
+  text-align: center;
+}
+.weather-box .temp {
+  display: inline-block;
+  padding: 10px 25px;
+  color: #FFF;
+  font-size: 102px;
+  font-weight: 900;
+  text-shadow: 3px 6px rgba(0, 0, 0, 0.25);
+  background-color:rgba(255, 255, 255, 0.25);
+  border-radius: 16px;
+  margin: 30px 0px;
+  box-shadow: 3px 6px rgba(0, 0, 0, 0.25);
+}
+.weather-box .weather {
+  color: #FFF;
+  font-size: 48px;
+  font-weight: 700;
+  font-style: italic;
+  text-shadow: 3px 6px rgba(0, 0, 0, 0.25);
 }
 </style>
