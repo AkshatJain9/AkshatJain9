@@ -3,28 +3,24 @@
     <main>
       <div class="introduction">
         <div class="title">
-          Hi! My name is Akshat Jain
+          Hi! My name is <span>Akshat Jain</span> 
         </div>
         <div class="description">
           I am a Student at the Australian National University (ANU) and a Database Engineer at Services Australia
         </div>
       </div>
 
-      <div class="contact">
-        <div class="github">
-          <button type="button" id="gitbutton">Github</button>
-        </div>
-
-        <div class="resume">
-
-        </div>
-
-        <div class="linkedin">
-
-
-        </div>
-
+      <!-- <div class="contact"> -->
+      <div class="github">
+        <button class="githubbutton" type="button" id="gitbutton" onclick="window.open('https://github.com/AkshatJain9', '_blank')"></button>
       </div>
+
+      <button class="resumebutton" type="button" id="resbutton">Resume</button>
+
+      <button class="linkedinbutton" type="button" id="libutton">Linkedin</button>
+
+<!-- 
+      </div> -->
 
       <div class="work">
 
@@ -46,38 +42,13 @@
   export default {
     name: 'app',
     data () {
-      return {
-        weather_api: '08d19d2cfc7606d7d78082f4185a934b',
-        url_base: 'http://api.openweathermap.org/data/2.5/',
-        query:'Canberra',
-        weather: {}
-      };
+
     },
 
     methods: {
-      fetchWeather() {
-          fetch(`${this.url_base}weather?q=Canberra&units=metric&APPID=${this.weather_api}`)
-          .then(res => {
-            return res.json();
-          }).then(this.setResults);
-      },
-      setResults (results) {
-          this.weather = results;
-      },
-
-      dateBuilder () {
-      let d = new Date();
-      let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-      let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-      let day = days[d.getDay()];
-      let date = d.getDate();
-      let month = months[d.getMonth()];
-      let year = d.getFullYear();
-      return `${day} ${date} ${month} ${year}`;
-      }
     },
     beforeMount() {
-      this.fetchWeather()
+
     }
   }
 </script>
@@ -93,6 +64,32 @@
 
 body {
   font-family: 'montserrat', sans-serif;
+}
+.contact {
+  font-size: large;
+}
+
+.github {
+    margin-left: 25%;
+    padding-top: 50px;
+}
+
+.githubbutton {
+  background-image: url('./assets/Github-logo.png');
+  background-color: transparent;
+  background-size: cover;
+  object-fit: contain;
+  width: 150px;
+  height: 150px;
+}
+
+.linkedinbutton {
+
+  margin-left: 25%;
+}
+
+.resumebutton {
+  margin-left: 25%;
 }
 
 #app {
@@ -117,6 +114,11 @@ main {
 
 .introduction .title {
   font-size: 50px;
+  padding-bottom: 20px;
+}
+
+.introduction .title span {
+  color: #2b7fab;
 }
 
 .introduction .description {
