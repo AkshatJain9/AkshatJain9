@@ -10,17 +10,20 @@
         </div>
       </div>
 
-      <!-- <div class="contact"> -->
+      <div class="contact">
       <div class="github">
         <button class="githubbutton" type="button" id="gitbutton" onclick="window.open('https://github.com/AkshatJain9', '_blank')"></button>
       </div>
 
+      <div class ="resume">
       <button class="resumebutton" type="button" id="resbutton">Resume</button>
+      </div>
 
-      <button class="linkedinbutton" type="button" id="libutton">Linkedin</button>
+      <div class="linkedin">
+      <button class="linkedinbutton" type="button" id="libutton" onclick="window.open('https://www.linkedin.com/in/akshat-jain-155b74203/', '_blank')"></button>
+      </div>
 
-<!-- 
-      </div> -->
+      </div>
 
       <div class="work">
 
@@ -67,11 +70,14 @@ body {
 }
 .contact {
   font-size: large;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 50px;
 }
 
 .github {
-    margin-left: 25%;
-    padding-top: 50px;
+
 }
 
 .githubbutton {
@@ -81,16 +87,31 @@ body {
   object-fit: contain;
   width: 150px;
   height: 150px;
+  cursor: pointer;
+}
+
+.resume {
+  
+}
+.resumebutton {
+  cursor: pointer;
+}
+
+.linkedin {
+
 }
 
 .linkedinbutton {
-
-  margin-left: 25%;
+  background-image: url('./assets/Linkedin-logo.png');
+  background-color: transparent;
+  background-size: cover;
+  object-fit: contain;
+  width: 150px;
+  height: 150px;
+  cursor: pointer;
 }
 
-.resumebutton {
-  margin-left: 25%;
-}
+
 
 #app {
   background-size:contain;
