@@ -3,7 +3,7 @@
     <main>
       <div class="introduction">
         <div class="title">
-          Hi! My name is <span>Akshat Jain</span> 
+          Hi! My Name is <span>Akshat Jain</span> 
         </div>
         <div class="description">
           I am a Student at the Australian National University (ANU) and a Database Engineer at Services Australia
