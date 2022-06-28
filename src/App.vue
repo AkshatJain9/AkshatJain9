@@ -16,7 +16,7 @@
       </div>
 
       <div class ="resume">
-      <button class="resumebutton" type="button" id="resbutton" onclick="location.href='assets/Resume_JAIN.pdf';">Resume</button>
+      <button class="resumebutton" type="button" id="resbutton" onclick="window.open('https://akshatjain9.github.io/Resume/Resume_JAIN.pdf', '_blank')">Resume</button>
       </div>
 
       <div class="linkedin">
