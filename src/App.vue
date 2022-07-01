@@ -3,7 +3,7 @@
     <main>
       <div class="introduction">
         <div class="title">
-          Hi! My Name is <span>Akshat Jain</span> 
+          Hi! My Name is <name>Akshat Jain</name> 
         </div>
         <div class="description">
           I am a Student at the Australian National University (ANU) and a Database Engineer at Services Australia
@@ -16,7 +16,7 @@
       </div>
 
       <div class ="resume">
-      <button class="resumebutton" type="button" id="resbutton" onclick="window.open('https://akshatjain9.github.io/Resume/Resume_JAIN.pdf', '_blank')">Resume</button>
+      <button class="resumebutton" type="button" id="resbutton" onclick="window.open('https://akshatjain9.github.io/Resume/Resume_JAIN.pdf', '_blank')"></button>
       </div>
 
       <div class="linkedin">
@@ -87,7 +87,7 @@ body {
   padding-bottom: 20px;
 }
 
-.introduction .title span {
+.introduction .title name {
   color: #2b7fab;
 }
 
@@ -124,6 +124,12 @@ body {
 }
 
 .resumebutton {
+  background-image: url('./assets/resume.png');
+  /* background-color: transparent; */
+  background-size: cover;
+  object-fit: contain;
+  width: 150px;
+  height: 150px;
   cursor: pointer;
 }
 
