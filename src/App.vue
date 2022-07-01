@@ -24,15 +24,28 @@
       </div>
       </div>
 
-      <div class="skills">
+      
         <div class="skillstitle"> My Skills at a Glance</div>
 
+      <div class="skills">
+        <div class="python">
+          <img src="./assets/python.png" alt="python" width="120" height="120">
+        </div> 
+        <div class="cpp">
+          <img src="./assets/cpp.png" alt="cpp" width="110" height="120">
+        </div> 
+        <div class="git">
+          <img src="./assets/git.png" alt="git" width="120" height="120">
+        </div> 
+        <div class="java">
+          <img src="./assets/java.png" alt="java" width="120" height="120">
+        </div> 
+        <div class="javascript">
+          <img src="./assets/javascript.png" alt="javascript" width="120" height="120">
+        </div> 
+
       </div>
 
-      <div class="aboutme">
-        Test
-
-      </div>
 
       <div class="projects">
         <div class="projectstitle">Software Projects</div>
@@ -103,15 +116,25 @@ body {
   padding-top: 50px;
 }
 
+.skills {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 50px;
+}
+
 
 .skillstitle {
-  padding: 25px;
   font-family: PortfolioFont;
   font-weight: 100;
   color: #FFF;
   padding-top: 100px;
   font-size: 40px;
 }
+
+/* .python {
+  background-image: url('./assets/python.png');
+} */
 
 .githubbutton {
   background-image: url('./assets/Github-logo.png');
