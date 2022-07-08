@@ -16,16 +16,16 @@
       </div>
 
       <div class ="resume">
-      <button class="resumebutton" type="button" id="resbutton" onclick="window.open('https://akshatjain9.github.io/Resume/Resume_JAIN.pdf', '_blank')"></button>
+        <button class="resumebutton" type="button" id="resbutton" onclick="window.open('https://akshatjain9.github.io/Resume/Resume_JAIN.pdf', '_blank')"></button>
       </div>
 
       <div class="linkedin">
-      <button class="linkedinbutton" type="button" id="libutton" onclick="window.open('https://www.linkedin.com/in/akshat-jain-155b74203/', '_blank')"></button>
+        <button class="linkedinbutton" type="button" id="libutton" onclick="window.open('https://www.linkedin.com/in/akshat-jain-155b74203/', '_blank')"></button>
       </div>
       </div>
 
       
-        <div class="skillstitle"> My Skills at a Glance</div>
+      <div class="skillstitle"> My Skills at a Glance</div>
 
       <div class="skills">
         <div class="python">
@@ -43,7 +43,6 @@
         <div class="javascript">
           <img src="./assets/javascript.png" alt="javascript" width="120" height="120">
         </div> 
-
       </div>
 
 
@@ -52,14 +51,20 @@
 
       </div>
 
+    <Timeline />
     </main>
+
   </div>
 </template>
 
 
 <script>
+import Timeline from './components/Timeline.vue';
   export default {
     name: 'app',
+    components : {
+      Timeline
+    },
     data () {
 
     },
@@ -132,9 +137,6 @@ body {
   font-size: 40px;
 }
 
-/* .python {
-  background-image: url('./assets/python.png');
-} */
 
 .githubbutton {
   background-image: url('./assets/Github-logo.png');
