@@ -25,7 +25,7 @@
       </div>
 
       
-      <div class="skillstitle"> My Skills at a Glance</div>
+      <div class="skillstitle">Skills at a Glance</div>
 
       <div class="skills">
         <div class="python">
