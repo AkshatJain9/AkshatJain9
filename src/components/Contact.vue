@@ -1,15 +1,18 @@
  <template>
     <div id="contact">
     <div class="contact">
-        <div class="github">
+      <div class="github">
+        <div class="githubbackground"></div>
         <button class="githubbutton" type="button" id="gitbutton" onclick="window.open('https://github.com/AkshatJain9', '_blank')"></button>
-        </div>
+      </div>
 
       <div class ="resume">
+        <div class="resumebackground"></div>
         <button class="resumebutton" type="button" id="resbutton" onclick="window.open('https://akshatjain9.github.io/Resume/Resume_JAIN.pdf', '_blank')"></button>
       </div>
 
       <div class="linkedin">
+        <div class="linkedinbackground"></div>
         <button class="linkedinbutton" type="button" id="libutton" onclick="window.open('https://www.linkedin.com/in/akshat-jain-155b74203/', '_blank')"></button>
       </div>
   </div>
@@ -41,6 +44,7 @@ export default {
   align-items: center;
   justify-content: space-around;
   padding-top: 50px;
+  position: relative;
 }
 
 .contact .githubbutton {
@@ -62,7 +66,38 @@ export default {
   cursor: pointer;
 }
 
+.githubbackground {
+  background-color: transparent;
+  border: 2px solid red;
+  width: 33%;
+  height: 100%;
+  z-index: -50;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
 
+.resumebackground {
+  background-color: transparent;
+  border: 2px solid red;
+  width: 33%;
+  height: 100%;
+  z-index: -50;
+  position: absolute;
+  top: 0px;
+  left: 33%;
+}
+
+.linkedinbackground {
+  background-color: transparent;
+  border: 2px solid red;
+  width: 33%;
+  height: 100%;
+  z-index: -50;
+  position: absolute;
+  top: 0px;
+  left: 66%;
+}
 .contact .linkedinbutton {
   background-image: url('../assets/Linkedin-logo.png');
   background-color: transparent;
