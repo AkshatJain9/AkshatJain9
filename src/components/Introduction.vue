@@ -49,6 +49,7 @@ export default {
 
 .introduction .description {
   font-size: 20px;
+  padding-bottom: 20px;
 }
 
 </style>

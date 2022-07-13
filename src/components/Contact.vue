@@ -2,22 +2,29 @@
     <div id="contact">
     <div class="contact">
       <div class="github">
-        <div class="githubbackground"></div>
-        <button class="githubbutton" type="button" id="gitbutton" onclick="window.open('https://github.com/AkshatJain9', '_blank')"></button>
+        <div class="githubbackground">
+          <button class="githubbutton" type="button" id="gitbutton" onclick="window.open('https://github.com/AkshatJain9', '_blank')"></button>
+          <div class="githubtext">Github</div>
+        </div>
       </div>
 
       <div class ="resume">
-        <div class="resumebackground"></div>
+        <div class="resumebackground">
         <button class="resumebutton" type="button" id="resbutton" onclick="window.open('https://akshatjain9.github.io/Resume/Resume_JAIN.pdf', '_blank')"></button>
+
+          <div class="resumetext">Resume</div>
+        </div>
       </div>
 
       <div class="linkedin">
-        <div class="linkedinbackground"></div>
-        <button class="linkedinbutton" type="button" id="libutton" onclick="window.open('https://www.linkedin.com/in/akshat-jain-155b74203/', '_blank')"></button>
+        <div class="linkedinbackground">
+          <button class="linkedinbutton" type="button" id="libutton" onclick="window.open('https://www.linkedin.com/in/akshat-jain-155b74203/', '_blank')"></button>
+          <div class="linkedintext">LinkedIn</div>
+        </div>
+        
       </div>
   </div>
   </div>
-
 </template>
 
 
@@ -43,11 +50,12 @@ export default {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  padding-top: 50px;
+  padding-top: 100px;
+  padding-bottom: 150px;
   position: relative;
 }
 
-.contact .githubbutton {
+.githubbutton {
   background-image: url('../assets/Github-logo.png');
   background-color: transparent;
   background-size: cover;
@@ -55,50 +63,20 @@ export default {
   width: 150px;
   height: 150px;
   cursor: pointer;
+  border: none;
 }
 
-.contact .resumebutton {
+.resumebutton {
   background-image: url('../assets/resume.png');
   background-size: cover;
   object-fit: contain;
   width: 150px;
   height: 150px;
   cursor: pointer;
+  border: none;
 }
 
-.githubbackground {
-  background-color: transparent;
-  border: 2px solid red;
-  width: 33%;
-  height: 100%;
-  z-index: -50;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-}
-
-.resumebackground {
-  background-color: transparent;
-  border: 2px solid red;
-  width: 33%;
-  height: 100%;
-  z-index: -50;
-  position: absolute;
-  top: 0px;
-  left: 33%;
-}
-
-.linkedinbackground {
-  background-color: transparent;
-  border: 2px solid red;
-  width: 33%;
-  height: 100%;
-  z-index: -50;
-  position: absolute;
-  top: 0px;
-  left: 66%;
-}
-.contact .linkedinbutton {
+.linkedinbutton {
   background-image: url('../assets/Linkedin-logo.png');
   background-color: transparent;
   background-size: cover;
@@ -106,9 +84,96 @@ export default {
   width: 150px;
   height: 150px;
   cursor: pointer;
+  border: none;
 }
 
 
+.githubbackground {
+  background-color: transparent;
+  transition: .5s ease-out;
+  width: 33%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.githubbackground:hover {
+  background-color: #1d1d1d;
+}
+
+.githubbackground:hover .githubtext {
+  color: white;
+}
+
+.githubtext {
+  color: transparent;
+  align-items: center;
+  font-size: 180%;
+  padding-top: 5%;
+  transition: .55s ease-out;
+}
+
+
+.resumebackground {
+  background-color: transparent;
+  transition: .5s ease-out;
+  width: 33%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 33.33%;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.resumebackground:hover {
+  background-color: #1d1d1d;
+}
+
+.resumebackground:hover .resumetext {
+  color: white;
+}
+
+.resumetext {
+  color: transparent;
+  align-items: center;
+  font-size: 180%;
+  padding-top: 5%;
+  transition: .55s ease-out;
+}
+
+.linkedinbackground {
+  background-color: transparent;
+  transition: .5s ease-out;
+  width: 33%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 66.66%;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.linkedinbackground:hover {
+  background-color: #1d1d1d;
+
+}
+
+.linkedinbackground:hover .linkedintext {
+  color: white;
+
+}
+
+.linkedintext {
+  color: transparent;
+  align-items: center;
+  font-size: 180%;
+  padding-top: 5%;
+  transition: .5s ease-out;
+}
 
 
 </style> 

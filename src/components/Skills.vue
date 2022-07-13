@@ -53,7 +53,7 @@ export default {
   font-family: PortfolioFont;
   font-weight: 100;
   color: #FFF;
-  padding-top: 100px;
+  padding-top: 50px;
   font-size: 40px;
 }
 
