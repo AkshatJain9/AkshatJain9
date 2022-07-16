@@ -10,7 +10,7 @@
 
       </div>
 
-    <Timeline />
+    <Projects />
     </main>
 
   </div>
@@ -18,11 +18,10 @@
 
 
 <script>
-
-import Timeline from './components/Timeline.vue';
 import Introduction from './components/Introduction.vue';
 import Contact from './components/Contact.vue';
-import Skills from './components/Skills.vue'; 
+import Skills from './components/Skills.vue';
+import Projects from './components/Projects.vue';
 
 particlesJS("particles-js", {
       "particles": {
@@ -152,7 +151,7 @@ particlesJS("particles-js", {
     name: 'app',
     components : {
       Introduction,
-      Timeline,
+      Projects,
       Contact,
       Skills
     },
@@ -173,7 +172,9 @@ particlesJS("particles-js", {
 
 <style>
 
-canvas{display: block;}
+canvas {
+  display: block;
+  }
 #particles-js { 
   position:absolute; 
   width: 100%; 
@@ -184,16 +185,9 @@ canvas{display: block;}
   background-size: cover; 
   background-position: 50% 50%;
   z-index: -100; 
-  } 
-  /* ---- stats.js ---- */ 
-/* .count-particles{ background: #000022; position: absolute; top: 48px; left: 0; width: 80px; color: #13E8E9; font-size: .8em; text-align: left; text-indent: 4px; line-height: 14px; padding-bottom: 2px; font-family: Helvetica, Arial, sans-serif; font-weight: bold; } 
-.js-count-particles{ font-size: 1.1em; } #stats, 
-.count-particles{ -webkit-user-select: none; margin-top: 5px; margin-left: 5px; } 
-#stats{ border-radius: 3px 3px 0 0; overflow: hidden; } .count-particles{ border-radius: 0 0 3px 3px; } */
+  }
 
 #app {
-  /* background-size:contain;
-  background-position: bottom; */
   transition: 0.4s;
 }
 

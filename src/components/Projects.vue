@@ -1,16 +1,16 @@
 <template>
-  <div id="timeline">
-    <main>
-    
+  <div class="stuff">
 
-    </main>
+    Hello World
+
   </div>
+  
 </template>
 
 
 <script>
   export default {
-    name: 'timeline',
+    name: 'projects',
     data () {
 
     },
@@ -27,5 +27,9 @@
 
 
 <style>
+
+.stuff {
+  padding-top: 50px;
+}
 
 </style>
