@@ -4,12 +4,9 @@
       <Introduction />
       <Contact />
       <Skills />
-
       <div class="projects">
         <div class="projectstitle">Software Projects</div>
-
       </div>
-
     <Projects />
     </main>
 
@@ -161,7 +158,7 @@ particlesJS("particles-js", {
 
 canvas {
   display: block;
-  }
+}
   
 #particles-js { 
   position:fixed; 
@@ -174,7 +171,7 @@ canvas {
   background-size: cover; 
   background-position: 50% 50%;
   z-index: -100; 
-  }
+}
 
 #app {
   transition: 0.4s;
