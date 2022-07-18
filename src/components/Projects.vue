@@ -1,7 +1,6 @@
 <template>
-  <div class="stuff">
-
-    Hello World
+  <div class="timeline">
+    Hello world
 
   </div>
   
@@ -9,6 +8,8 @@
 
 
 <script>
+
+
   export default {
     name: 'projects',
     data () {
@@ -28,8 +29,9 @@
 
 <style>
 
-.stuff {
+.timeline {
   padding-top: 50px;
+  text-align: center;
 }
 
 </style>
