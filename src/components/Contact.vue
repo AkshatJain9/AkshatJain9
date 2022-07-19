@@ -98,6 +98,7 @@ export default {
   left: 0px;
   text-align: center;
   padding-top: 20px;
+  cursor: pointer;
 }
 
 .githubbackground:hover {
@@ -127,6 +128,7 @@ export default {
   left: 33.33%;
   text-align: center;
   padding-top: 20px;
+  cursor: pointer;
 }
 
 .resumebackground:hover {
@@ -155,6 +157,7 @@ export default {
   left: 66.66%;
   text-align: center;
   padding-top: 20px;
+  cursor: pointer;
 }
 
 .linkedinbackground:hover {
