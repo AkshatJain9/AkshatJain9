@@ -2,7 +2,7 @@
     <div id="introduction">
         <div class="introduction">
         <div class="title">
-          Hi! My Name is <name>Akshat Jain</name> 
+          Hi! My Name is <span class="nametext">Akshat Jain</span> 
         </div>
         <div class="description">
           I am a Student at the Australian National University (ANU) and a Database Engineer at Services Australia
@@ -15,16 +15,6 @@
 <script>
 export default {
     name: 'introduction',
-    data () {
-
-    },
-
-    methods: {
-
-    },
-    beforeMount() {
-
-    }
   }
 </script>
 
@@ -43,7 +33,7 @@ export default {
   padding-bottom: 20px;
 }
 
-.introduction .title name {
+.nametext {
   color: #2b7fab;
 }
 

@@ -27,16 +27,6 @@
 <script>
 export default {
     name: 'skills',
-    data () {
-
-    },
-
-    methods: {
-
-    },
-    beforeMount() {
-
-    }
   }
 </script>
 

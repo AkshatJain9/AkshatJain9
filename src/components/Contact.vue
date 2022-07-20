@@ -31,16 +31,6 @@
 <script>
 export default {
     name: 'contact',
-    data () {
-
-    },
-
-    methods: {
-
-    },
-    beforeMount() {
-
-    }
   }
 </script>
 

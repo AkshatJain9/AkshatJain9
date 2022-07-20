@@ -139,16 +139,6 @@ particlesJS("particles-js", {
       Contact,
       Skills
     },
-    data () {
-
-    },
-
-    methods: {
-
-    },
-    beforeMount() {
-
-    }
   }
 </script>
 
