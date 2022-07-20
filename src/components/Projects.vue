@@ -9,6 +9,8 @@
         Created a digital version of the German board game "Cublino" using Java and an MVP architecture.
         Further extended the game with 3D Graphics and a custom game-mode. Added the ability to play
         against computet agents, which utilised basic Reinforcement Learning techniques.
+
+        <button onclick="window.open('https://github.com/AkshatJain9/CublinoGame', '_blank')">View Source</button>
       </div>
     </li>
 
@@ -19,6 +21,8 @@
         using a social-media like application. The app included features such as being able to follow, like and share posts.
         It also allowed for peer-to-peer messaging and utilised a NoSQL Google Firestore database to store and query data. 
         Also added a basic language comrehension model to allow users to use a search mechanism.
+
+        <button onclick="window.open('https://github.com/AkshatJain9/Fitomatic', '_blank')">View Source</button>
       </div>
     </li>
 
@@ -26,6 +30,8 @@
       <div>
         <title>VueJS Personal Website</title>
         Created <span id="thissite">this</span> website using VueJS!
+
+        <button onclick="window.open('https://github.com/AkshatJain9/AkshatJain9', '_blank')">View Source</button>
       </div>
     </li>
 
@@ -34,6 +40,8 @@
         <title>Chaturanji</title>
         A C++ implementation of the earliest known Chess ancestor "Chaturanji". Features an MVVC architecture built on
         the SDL graphics library. Also allows users to play against bots which make use of PyTorch's C++ library (In Progress).
+        
+        <button onclick="window.open('https://github.com/AkshatJain9/ChaturangaAI', '_blank')">View Source</button>
       </div>
     </li>
   
@@ -168,6 +176,20 @@ title {
   font-size: 1.2rem;
   font-weight: bold;
   margin-bottom: 8px;
+}
+
+ul li button {
+  display: block;
+  margin-top: 10px;
+  padding: 10px;
+  background: blue;
+  height: 10%;
+  width: 50%;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  position: relative;
 }
 
 
