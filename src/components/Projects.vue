@@ -2,67 +2,41 @@
 
 
 <section class="timeline">
-  <ul>
-    <li>
+  <ul> <!-- Unordered list, alternate is ordered list (ol)-->
+    <li> <!-- List element -->
       <div>
-        <time>1934</time> At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+        <title>Cublino</title>
+        Created a digital version of the German board game "Cublino" using Java and an MVP architecture.
+        Further extended the game with 3D Graphics and a custom game-mode. Added the ability to play
+        against computet agents, which utilised basic Reinforcement Learning techniques.
       </div>
     </li>
+
     <li>
       <div>
-        <time>1937</time> Proin quam velit, efficitur vel neque vitae, rhoncus commodo mi. Suspendisse finibus mauris et bibendum molestie. Aenean ex augue, varius et pulvinar in, pretium non nisi.
+        <title>Fitomatic</title> 
+        Created an Android application aimed around connecting people with similar fitness goals and interests 
+        using a social-media like application. The app included features such as being able to follow, like and share posts.
+        It also allowed for peer-to-peer messaging and utilised a NoSQL Google Firestore database to store and query data. 
+        Also added a basic language comrehension model to allow users to use a search mechanism.
       </div>
     </li>
+
     <li>
       <div>
-        <time>1940</time> Proin iaculis, nibh eget efficitur varius, libero tellus porta dolor, at pulvinar tortor ex eget ligula. Integer eu dapibus arcu, sit amet sollicitudin eros.
+        <title>VueJS Personal Website</title>
+        Created <span id="thissite">this</span> website using VueJS!
       </div>
     </li>
+
     <li>
       <div>
-        <time>1943</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
+        <title>Chaturanji</title>
+        A C++ implementation of the earliest known Chess ancestor "Chaturanji". Features an MVVC architecture built on
+        the SDL graphics library. Also allows users to play against bots which make use of PyTorch's C++ library (In Progress).
       </div>
     </li>
-    <li>
-      <div>
-        <time>1946</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
-      </div>
-    </li>
-    <li>
-      <div>
-        <time>1956</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
-      </div>
-    </li>
-    <li>
-      <div>
-        <time>1957</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
-      </div>
-    </li>
-    <li>
-      <div>
-        <time>1967</time> Aenean condimentum odio a bibendum rhoncus. Ut mauris felis, volutpat eget porta faucibus, euismod quis ante.
-      </div>
-    </li>
-    <li>
-      <div>
-        <time>1977</time> Vestibulum porttitor lorem sed pharetra dignissim. Nulla maximus, dui a tristique iaculis, quam dolor convallis enim, non dignissim ligula ipsum a turpis.
-      </div>
-    </li>
-    <li>
-      <div>
-        <time>1985</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
-      </div>
-    </li>
-    <li>
-      <div>
-        <time>2000</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
-      </div>
-    </li>
-    <li>
-      <div>
-        <time>2005</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
-      </div>
-    </li>
+  
   </ul>
 </section>
 
@@ -73,15 +47,10 @@
 <script>
   export default {
     name: 'projects',
-    data () {
-
-    },
-
     mounted() {
       "use strict";
       var items = document.querySelectorAll(".timeline li");
       
-
       function callbackFunc() {
         for (var i = 0; i < items.length; i++) {
           if (isElementInViewport(items[i])) {
@@ -107,7 +76,7 @@
 </script>
 
 
-
+<!-- See  https://webdesign.tutsplus.com/tutorials/building-a-vertical-timeline-with-css-and-a-touch-of-javascript--cms-26528 -->
 <style>
 
 *,
@@ -120,30 +89,10 @@
 
 body {
   font: normal 16px/1.5 "Helvetica Neue", sans-serif;
-  background: #456990;
+  background: transparent;
   color: #fff;
   overflow-x: hidden;
   padding-bottom: 50px;
-}
-
-
-/* INTRO SECTION
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-.intro {
-  background: #f45b69;
-  padding: 100px 0;
-}
-
-.container {
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-h1 {
-  font-size: 2.5rem;
 }
 
 
@@ -151,7 +100,7 @@ h1 {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .timeline ul {
-  background: #456990;
+  background: transparent;
   padding: 50px 0;
 }
 
@@ -214,7 +163,7 @@ h1 {
   border-color: transparent transparent transparent #f45b69;
 }
 
-time {
+title {
   display: block;
   font-size: 1.2rem;
   font-weight: bold;
@@ -263,7 +212,6 @@ time {
   }
   .timeline ul li:nth-child(even) div {
     left: -289px;
-    /*250+45-6*/
   }
 }
 
@@ -343,73 +291,5 @@ time {
     transform: translateX(-50%) scale(1);
   }
 }
-
-
-/* FOOTER STYLES
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-.page-footer {
-  position: fixed;
-  right: 0;
-  bottom: 20px;
-  display: flex;
-  align-items: center;
-  padding: 5px;
-  color: black;
-  background: rgba(255, 255, 255, 0.65);
-}
-
-.page-footer a {
-  display: flex;
-  margin-left: 4px;
-}
-
-
-/* #timeline {
-  padding-top: 40px;
-  display: flex;
-  align-items: center;
-}
-
-
-#timeline #timelineline {
-  position: relative;
-  height: 1500px;
-  width: 40px;
-  background-color: #8b1801;
-  border-radius: 99px;
-  align-items: center;
-  display: table;
-  margin: 0 auto;
-}
-
-.softwarep {
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  z-index: 1;
-  color: #FFF;
-}
-
-.left {
-  left: 100px
-}
-
-.cublino {
-  top: 75px
-}
-
-.cardtitle {
-  display: inline;
-  font-size: 20px;
-  font-weight: 100;
-  padding-bottom: 10px;
-}
-
-.carddescription {
-  display: inline;
-  font-size: 14px;
-  font-weight: 100;
-  padding-bottom: 10px;
-} */
 
 </style>

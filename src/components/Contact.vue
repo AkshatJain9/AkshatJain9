@@ -4,7 +4,7 @@
       <div class="github">
         <div class="githubbackground" onclick="window.open('https://github.com/AkshatJain9', '_blank')">
           <button class="githubbutton" type="button" id="gitbutton" onclick="window.open('https://github.com/AkshatJain9', '_blank')"></button>
-          <div class="githubtext">Github</div>
+          <div class="githubtext">GitHub</div>
         </div>
       </div>
 
