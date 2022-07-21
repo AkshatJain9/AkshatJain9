@@ -10,6 +10,10 @@
         Further extended the game with 3D Graphics and a custom game-mode. Added the ability to play
         against computet agents, which utilised basic Reinforcement Learning techniques.
 
+        <images class="timeline-images">
+          <img src="../assets/cublino/cublino-1.png">
+        </images>
+
         <button onclick="window.open('https://github.com/AkshatJain9/CublinoGame', '_blank')">View Source</button>
       </div>
     </li>
@@ -137,7 +141,7 @@ body {
 .timeline ul li div {
   position: relative;
   bottom: 0;
-  width: 400px;
+  width: 600px;
   padding: 15px;
   background: #f45b69;
 }
@@ -162,7 +166,7 @@ body {
 }
 
 .timeline ul li:nth-child(even) div {
-  left: -439px;
+  left: -639px;
 }
 
 .timeline ul li:nth-child(even) div::before {
@@ -190,6 +194,27 @@ ul li button {
   border-radius: 3px;
   cursor: pointer;
   position: relative;
+}
+
+
+.timeline-images {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 30px;
+  position: relative;
+  align-items: center;
+}
+
+ul li img {
+  display: block;
+
+  background: blue;
+  height: 100%;
+  width: 100%;
+  border: none;
+  border-radius: 3px;
+  align-self: center;
 }
 
 
