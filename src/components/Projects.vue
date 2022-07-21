@@ -26,6 +26,10 @@
         It also allowed for peer-to-peer messaging and utilised a NoSQL Google Firestore database to store and query data. 
         Also added a basic language comrehension model to allow users to use a search mechanism.
 
+        <images class="timeline-images">
+          <img src="../assets/fitomatic/fitomatic-1.jpg">
+        </images>
+
         <button onclick="window.open('https://github.com/AkshatJain9/Fitomatic', '_blank')">View Source</button>
       </div>
     </li>
