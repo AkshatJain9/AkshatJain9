@@ -46,7 +46,7 @@
     <li>
       <div>
         <title>Chaturanji</title>
-        A C++ implementation of the earliest known Chess ancestor "Chaturanji". Features an MVVC architecture built on
+        A C++ implementation of the earliest known Chess ancestor "Chaturanji". Features an MVVM architecture built on
         the SDL graphics library. Also allows users to play against bots which make use of PyTorch's C++ library (In Progress).
         
         <button onclick="window.open('https://github.com/AkshatJain9/ChaturangaAI', '_blank')">View Source</button>
