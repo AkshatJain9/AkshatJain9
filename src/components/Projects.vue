@@ -45,8 +45,8 @@
 
     <li>
       <div>
-        <title>Chaturanji</title>
-        A C++ implementation of the earliest known Chess ancestor "Chaturanji". Features an MVVM architecture built on
+        <title>Chaturanga</title>
+        A C++ implementation of the earliest known Chess ancestor "Chaturanga". Features an MVVM architecture built on
         the SDL graphics library. Also allows users to play against bots which make use of PyTorch's C++ library (In Progress).
         
         <button onclick="window.open('https://github.com/AkshatJain9/ChaturangaAI', '_blank')">View Source</button>
@@ -146,9 +146,10 @@ body {
   position: relative;
   bottom: 0;
   width: 600px;
-  padding: 15px;
-  background: #f45b69;
+  padding: 20px;
+  background: #205034;
 }
+/* #344B52 #367450;*/
 
 .timeline ul li div::before {
   content: "";
@@ -166,7 +167,7 @@ body {
 .timeline ul li:nth-child(odd) div::before {
   left: -15px;
   border-width: 8px 16px 8px 0;
-  border-color: transparent #f45b69 transparent transparent;
+  border-color: transparent #205034 transparent transparent;
 }
 
 .timeline ul li:nth-child(even) div {
@@ -176,7 +177,7 @@ body {
 .timeline ul li:nth-child(even) div::before {
   right: -15px;
   border-width: 8px 0 8px 16px;
-  border-color: transparent transparent transparent #f45b69;
+  border-color: transparent transparent transparent #205034;
 }
 
 title {
@@ -190,7 +191,7 @@ ul li button {
   display: block;
   margin-top: 10px;
   padding: 10px;
-  background: blue;
+  background: #017D64;
   height: 10%;
   width: 50%;
   color: #fff;
@@ -230,7 +231,7 @@ ul li img {
 }
 
 .timeline ul li.in-view::after {
-  background: #f45b69;
+  background: #4D7B60;
 }
 
 .timeline ul li div {
@@ -279,7 +280,7 @@ ul li img {
   .timeline ul li:nth-child(even) div::before {
     left: -15px;
     border-width: 8px 16px 8px 0;
-    border-color: transparent #f45b69 transparent transparent;
+    border-color: transparent #4D7B60 transparent transparent;
   }
 }
 

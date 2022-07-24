@@ -23,14 +23,14 @@ import Projects from './components/Projects.vue';
 particlesJS("particles-js", {
       "particles": {
         "number": {
-          "value":85,
+          "value":80,
           "density": {
             "enable":true,
             "value_area":800
           }
         },
         "color": {
-          "value":"#ffffff"
+          "value":"#649BD6"
         },
         "shape": {
           "type":"polygon",
@@ -58,7 +58,7 @@ particlesJS("particles-js", {
           }
         },
         "size":{
-          "value":1,
+          "value":2,
           "random":true,
           "anim":{
             "enable":false,
