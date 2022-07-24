@@ -1,28 +1,21 @@
  <template>
     <div id="contact">
     <div class="contact">
-      <div class="github">
+
         <div class="githubbackground" onclick="window.open('https://github.com/AkshatJain9', '_blank')">
           <button class="githubbutton" type="button" id="gitbutton" onclick="window.open('https://github.com/AkshatJain9', '_blank'); window.event.cancelBubble = true"></button>
           <div class="githubtext">GitHub</div>
         </div>
-      </div>
 
-      <div class ="resume">
         <div class="resumebackground" onclick="window.open('https://akshatjain9.github.io/Resume/Resume_JAIN.pdf', '_blank')">
-        <button class="resumebutton" type="button" id="resbutton" onclick="window.open('https://akshatjain9.github.io/Resume/Resume_JAIN.pdf', '_blank'); window.event.cancelBubble = true"></button>
-
+          <button class="resumebutton" type="button" id="resbutton" onclick="window.open('https://akshatjain9.github.io/Resume/Resume_JAIN.pdf', '_blank'); window.event.cancelBubble = true"></button>
           <div class="resumetext">Resume</div>
         </div>
-      </div>
 
-      <div class="linkedin">
         <div class="linkedinbackground" onclick="window.open('https://www.linkedin.com/in/akshat-jain-155b74203/', '_blank')">
           <button class="linkedinbutton" type="button" id="libutton" onclick="window.open('https://www.linkedin.com/in/akshat-jain-155b74203/', '_blank'); window.event.cancelBubble = true"></button>
           <div class="linkedintext">LinkedIn</div>
         </div>
-        
-      </div>
   </div>
   </div>
 </template>
