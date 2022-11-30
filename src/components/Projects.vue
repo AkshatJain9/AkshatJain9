@@ -45,14 +45,48 @@
 
     <li>
       <div>
-        <title>Chaturanga</title>
-        A C++ implementation of the earliest known Chess ancestor "Chaturanga". Features an MVVM architecture built on
-        the SDL graphics library. Also allows users to play against bots which make use of PyTorch's C++ library (In Progress).
-        
-        <button onclick="window.open('https://github.com/AkshatJain9/ChaturangaAI', '_blank')">View Source</button>
+        <title>HTTP Proxy</title>
+        Created a HTTP Proxy to handle GET requests using the C programming language. The proxy was able to handle multiple
+        clients and servers with in built concurrency and thread management. The proxy also implemented a cache to store frequently
+        visited sites with an option to employ both LRU (Least Recently Used) and LFU (Least Frequently Used) policies. The project
+        also has additional features such as a dynamic threadpool, dynamic cache eviction and robustness to handle errors.
+        This project was done without any external libraries and demonstrates an understanding of Network, Systems and Concurrent programming.
+
+        <images class="timeline-images">
+          <img src="../assets/sysprog/proxy.png">
+        </images>
+
+        <button onclick="window.open('https://github.com/AkshatJain9/C-HTTP-Network-Proxy', '_blank')">View Source</button>
       </div>
     </li>
-  
+
+    <li>
+      <div>
+        <title>Open Source Contributor - JabRef</title>
+        Contributed to an Ope-Source bibliography management software called JabRef. This was done collaboratively with 
+        maintainers based around the world acorss a 4 week time span. Several prograamming languages were involved,
+        most notably Python and Java. The result of this period was several accepted merge requests. This further demonstrated
+        an ability to work in sparse teams with unknowns across a long period of time, and an ability to follow software
+        engineering practices when working on an ongoing project.
+
+        <button onclick="window.open('https://github.com/JabRef/jabref/issues/8948', '_blank')">View Source</button>
+      </div>
+    </li>
+
+    <li>
+      <div>
+        <title>Systems Programming - Dynamic Memory Allocator</title>
+        Using the C programming language, implemented the library functions malloc and free using direct system calls,
+        manual memory management and an in-memory Explicit Free List. The project demonstrates an understanding of low level
+        Systems Programming, memory architecture and the how users interact with the Linux Kernel.
+
+        <images class="timeline-images">
+          <img src="../assets/sysprog/free_list.png">
+        </images>
+
+        <button onclick="window.open('https://github.com/AkshatJain9/C-Memory-Allocator', '_blank')">View Source</button>
+      </div>
+    </li>  
   </ul>
 </section>
 
@@ -68,20 +102,21 @@
       var items = document.querySelectorAll(".timeline li");
       
       function callbackFunc() {
-        for (var i = 0; i < items.length; i++) {
-          if (isElementInViewport(items[i])) {
+        for (let i = 0; i < items.length; i++) {
+          if (isElementInViewport(items[i], i)) {
             items[i].classList.add("in-view");
           }
         }
       }
 
-      function isElementInViewport(el) {
+      function isElementInViewport(el, i) {
         var rect = el.getBoundingClientRect();
-        let res = (rect.top >= 0 && rect.left >= 0 && rect.bottom <=
-          (window.innerHeight || document.documentElement.clientHeight) &&
-        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-        );
-        return res;
+        let btop = rect.top >= 0;
+        let bbottom = rect.top + (rect.bottom - rect.top)/3 <= (window.innerHeight || document.documentElement.clientHeight);
+        let bleft = rect.left >= 0;
+        let bright = rect.right <= (window.innerWidth || document.documentElement.clientWidth);
+
+        return btop && bbottom && bleft && bright;
       }
     
       window.addEventListener("load", callbackFunc);
@@ -214,7 +249,7 @@ ul li button {
 ul li img {
   display: block;
 
-  background: blue;
+  background: transparent;
   height: 100%;
   width: 100%;
   border: none;
