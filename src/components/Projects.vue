@@ -7,8 +7,8 @@
       <div>
         <title>Cublino</title>
         Created a digital version of the German board game "Cublino" using Java and an MVP architecture.
-        Further extended the game with 3D Graphics and a custom game-mode. Added the ability to play
-        against computet agents, which utilised basic Reinforcement Learning techniques.
+        Further extended the game with 3D Graphics and a custom game mode. Added the ability to play
+        against computer agents, which utilised basic Reinforcement Learning techniques.
 
         <images class="timeline-images">
           <img src="../assets/cublino/cublino-1.png">
@@ -24,7 +24,7 @@
         Created an Android application aimed around connecting people with similar fitness goals and interests 
         using a social-media like application. The app included features such as being able to follow, like and share posts.
         It also allowed for peer-to-peer messaging and utilised a NoSQL Google Firestore database to store and query data. 
-        Also added a basic language comrehension model to allow users to use a search mechanism.
+        Also added a basic language comprehension model to allow users to use a search mechanism.
 
         <images class="timeline-images">
           <img src="../assets/fitomatic/fitomatic-1.jpg">
@@ -36,8 +36,8 @@
 
     <li>
       <div>
-        <title>VueJS Personal Website</title>
-        Created <span id="thissite">this</span> website using VueJS!
+        <title>Vue.js Personal Website</title>
+        Created <span id="thissite">this</span> website using Vue.js!
 
         <button onclick="window.open('https://github.com/AkshatJain9/AkshatJain9', '_blank')">View Source</button>
       </div>
@@ -46,10 +46,10 @@
     <li>
       <div>
         <title>HTTP Proxy</title>
-        Created a HTTP Proxy to handle GET requests using the C programming language. The proxy was able to handle multiple
-        clients and servers with in built concurrency and thread management. The proxy also implemented a cache to store frequently
+        Created an HTTP Proxy to handle GET requests using the C programming language. The proxy was able to handle multiple
+        clients and servers with in-built concurrency and thread management. The proxy also implemented a cache to store frequently
         visited sites with an option to employ both LRU (Least Recently Used) and LFU (Least Frequently Used) policies. The project
-        also has additional features such as a dynamic threadpool, dynamic cache eviction and robustness to handle errors.
+        also has additional features such as a dynamic thread pool, dynamic cache eviction and robustness to handle errors.
         This project was done without any external libraries and demonstrates an understanding of Network, Systems and Concurrent programming.
 
         <images class="timeline-images">
@@ -64,9 +64,9 @@
       <div>
         <title>Open Source Contributor - JabRef</title>
         Contributed to an Ope-Source bibliography management software called JabRef. This was done collaboratively with 
-        maintainers based around the world acorss a 4 week time span. Several prograamming languages were involved,
+        maintainers based around the world across 4 weeks. Several programming languages were involved,
         most notably Python and Java. The result of this period was several accepted merge requests. This further demonstrated
-        an ability to work in sparse teams with unknowns across a long period of time, and an ability to follow software
+        an ability to work in sparse international teams, and an ability to follow software
         engineering practices when working on an ongoing project.
 
         <button onclick="window.open('https://github.com/JabRef/jabref/issues/8948', '_blank')">View Source</button>
@@ -78,7 +78,7 @@
         <title>Systems Programming - Dynamic Memory Allocator</title>
         Using the C programming language, implemented the library functions malloc and free using direct system calls,
         manual memory management and an in-memory Explicit Free List. The project demonstrates an understanding of low level
-        Systems Programming, memory architecture and the how users interact with the Linux Kernel.
+        Systems Programming, memory architecture and the Linux Kernel.
 
         <images class="timeline-images">
           <img src="../assets/sysprog/free_list.png">
