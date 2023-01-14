@@ -1,9 +1,7 @@
 <template>
-
-
 <section class="timeline">
-  <ul> <!-- Unordered list, alternate is ordered list (ol)-->
-    <li> <!-- List element -->
+  <ul>
+    <li>
       <div>
         <title>Cublino</title>
         Created a digital version of the German board game "Cublino" using Java and an MVP architecture.
@@ -97,20 +95,23 @@
 <script>
   export default {
     name: 'projects',
-    mounted() {
-      "use strict";
-      var items = document.querySelectorAll(".timeline li");
-      
-      function callbackFunc() {
+
+    methods: {
+      checkInView() {
+        "use strict";
+
+        let items = document.querySelectorAll(".timeline li");
+
         for (let i = 0; i < items.length; i++) {
-          if (isElementInViewport(items[i], i)) {
+          if (this.isElementInViewport(items[i])) {
             items[i].classList.add("in-view");
           }
         }
-      }
 
-      function isElementInViewport(el, i) {
-        var rect = el.getBoundingClientRect();
+      },
+
+      isElementInViewport(el) {
+        let rect = el.getBoundingClientRect();
         let btop = rect.top >= 0;
         let bbottom = rect.top + (rect.bottom - rect.top)/3 <= (window.innerHeight || document.documentElement.clientHeight);
         let bleft = rect.left >= 0;
@@ -118,10 +119,13 @@
 
         return btop && bbottom && bleft && bright;
       }
-    
-      window.addEventListener("load", callbackFunc);
-      window.addEventListener("resize", callbackFunc);
-      window.addEventListener("scroll", callbackFunc);
+    },
+
+    beforeMount() {
+      window.addEventListener("load", this.checkInView);
+      window.addEventListener("resize", this.checkInView);
+      window.addEventListener("scroll", this.checkInView);
+      this.checkInView();
     }
   }
 </script>

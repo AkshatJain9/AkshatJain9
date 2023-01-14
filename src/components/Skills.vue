@@ -4,30 +4,30 @@
       <div class="skills">
         <div class="img_wrapper">
           <div class="text"> Having majored in Machine Learning, I am proficient in Python and its core libraries including 
-          NumPy, Pandas, MPL, PyTorch, Tkinter and more. I also have experience in building Python backends 
+          NumPy, Pandas, MPL, PyTorch and more. I also have experience in building Python backends 
           for web applications </div>
           <img src="../assets/python.png" alt="python" width="120" height="120">
         </div> 
         <div class="img_wrapper">
           <div class="text"> 
             I have experience in both C and C++, mainly building applications centred around Systems Programming. This includes a Dynamic Memory Allocator and
-            HTTP Proxy listed below. I have also experimented with common libraries such as SDL and PyTorch
+            HTTP Proxy listed below. I have also experimented with common libraries such as SDL
           </div>
           <img src="../assets/cpp.png" alt="cpp" width="110" height="120">
         </div> 
         <div class="img_wrapper">
-          <div class="text"> I have worked in Agile Software Engineering environments and have displayed an ability to work
-            in teams and use common tools such as Git
+          <div class="text"> I have worked with common tools such as Git and have experience in using Cloud Services on platforms such as Azure. 
+            I have experience in DevOps principles having created CI/CD pipelines with technologies such as Docker
           </div>
           <img src="../assets/git.png" alt="git" width="120" height="120">
         </div> 
         <div class="img_wrapper">
           <div class="text"> Java is my strongest programming language as I have built several applications and tools using it. I have deep knowledge
-            of the standard library as well as external libraries such as Guava</div>
+            of the standard library as well as external libraries such as Spring Boot</div>
           <img src="../assets/java.png" alt="java" width="120" height="120">
         </div> 
         <div class="img_wrapper">
-          <div class="text"> I have experience creating multi-page front-end Web-Apps using the Vue ecosystem. I am capable
+          <div class="text"> I have experience creating Web-Apps using the Vue ecosystem. I am capable
             of writing both JavaScript and TypeScript and enjoy learning new frameworks
           </div>
           <img src="../assets/javascript.png" alt="javascript" width="120" height="120">
@@ -39,7 +39,7 @@
 
 
 <script>
-export default {
+  export default {
     name: 'skills',
   }
 </script>
@@ -57,6 +57,8 @@ export default {
   position: relative;
   color: transparent;
   text-align: center;
+  padding-top: 20px;
+  z-index: 100;
 }
 
 .img_wrapper:hover {
@@ -65,6 +67,8 @@ export default {
 
 .img_wrapper:hover .text {
   background-color: #1d1d1d;
+  padding-top: 30px;
+  padding-bottom: 45px;
 }
 
 .img_wrapper:hover img {
@@ -79,7 +83,9 @@ export default {
   font-size: 19px;
   z-index: 200;
   width: 275%;
-  transition: .5s ease-out;
+  transition: 0.5s ease-out;
+  border-radius: 40px;
+  padding: 20px;
 }
 
 .skillstitle {
@@ -92,6 +98,7 @@ export default {
 
 img {
   transition: .3s ease-out;
+  z-index: 100;
 }
 
 

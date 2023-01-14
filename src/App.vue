@@ -80,6 +80,14 @@ particlesJS("particles-js", {
       Contact,
       Skills
     },
+
+    
+    mounted() {
+      let canvas = document.getElementsByTagName('canvas')[0];
+      canvas.setAttribute('width', window.innerWidth - 20);
+      canvas.setAttribute('height', window.innerHeight);
+    }
+
   }
 </script>
 

@@ -1,33 +1,36 @@
  <template>
-    <div id="contact">
-    <div class="contact">
+  <div class="contact">
+      <div class="background githubbackground" @click="openLink('https://github.com/AkshatJain9')">
+        <button class="githubbutton button"></button>
+        <div class="text">GitHub</div>
+      </div>
 
-        <div class="githubbackground" onclick="window.open('https://github.com/AkshatJain9', '_blank')">
-          <button class="githubbutton" type="button" id="gitbutton" onclick="window.open('https://github.com/AkshatJain9', '_blank'); window.event.cancelBubble = true"></button>
-          <div class="githubtext">GitHub</div>
-        </div>
+      <div class="resume background" @click="openLink('https://akshatjain9.github.io/Resume/Resume_JAIN.pdf')">
+        <button class="resumebutton button"></button>
+        <div class="text">Resume</div>
+      </div>
 
-        <div class="resumebackground" onclick="window.open('https://akshatjain9.github.io/Resume/Resume_JAIN.pdf', '_blank')">
-          <button class="resumebutton" type="button" id="resbutton" onclick="window.open('https://akshatjain9.github.io/Resume/Resume_JAIN.pdf', '_blank'); window.event.cancelBubble = true"></button>
-          <div class="resumetext">Resume</div>
-        </div>
-
-        <div class="linkedinbackground" onclick="window.open('https://www.linkedin.com/in/akshat-jain-155b74203/', '_blank')">
-          <button class="linkedinbutton" type="button" id="libutton" onclick="window.open('https://www.linkedin.com/in/akshat-jain-155b74203/', '_blank'); window.event.cancelBubble = true"></button>
-          <div class="linkedintext">LinkedIn</div>
-        </div>
-  </div>
+      <div class="linkedin background" @click="openLink('https://www.linkedin.com/in/akshat-jain-155b74203/')">
+        <button class="linkedinbutton button"></button>
+        <div class="text">LinkedIn</div>
+      </div>
   </div>
 </template>
 
 
 <script>
-export default {
+  export default {
     name: 'contact',
+
+    methods: {
+      openLink(link) {
+        window.open(link, '_blank')
+      }
+    }
   }
 </script>
 
-<style>
+<style scoped>
 .contact {
   font-size: large;
   display: flex;
@@ -38,8 +41,7 @@ export default {
   position: relative;
 }
 
-.githubbutton {
-  background-image: url('../assets/Github-logo.png');
+.button {
   background-color: transparent;
   background-size: cover;
   object-fit: contain;
@@ -47,119 +49,60 @@ export default {
   height: 150px;
   cursor: pointer;
   border: none;
+}
+
+.githubbutton {
+  background-image: url('../assets/Github-logo.png');
 }
 
 .resumebutton {
   background-image: url('../assets/resume.png');
-  background-size: cover;
-  object-fit: contain;
-  width: 150px;
-  height: 150px;
-  cursor: pointer;
-  border: none;
+  background-color: white;
 }
 
 .linkedinbutton {
   background-image: url('../assets/Linkedin-logo.png');
-  background-color: transparent;
-  background-size: cover;
-  object-fit: contain;
-  width: 150px;
-  height: 150px;
-  cursor: pointer;
-  border: none;
 }
 
+.text {
+  color: transparent;
+  align-items: center;
+  font-size: 180%;
+  padding-top: 5%;
+  transition: .55s ease-out;
+}
 
-.githubbackground {
+.background {
   background-color: transparent;
   transition: .5s ease-out;
-  width: 33%;
   height: 100%;
   position: absolute;
   top: 0px;
   left: 0px;
+  width: 33%;
   text-align: center;
   padding-top: 20px;
   cursor: pointer;
+  border-radius: 40px;
 }
 
-.githubbackground:hover {
+.background:hover {
   background-color: #1d1d1d;
 }
 
-.githubbackground:hover .githubtext {
+.background:hover .text {
   color: white;
 }
 
-.githubtext {
-  color: transparent;
-  align-items: center;
-  font-size: 180%;
-  padding-top: 5%;
-  transition: .55s ease-out;
-}
-
-
-.resumebackground {
-  background-color: transparent;
-  transition: .5s ease-out;
-  width: 33%;
-  height: 100%;
-  position: absolute;
-  top: 0px;
+.resume {
   left: 33.33%;
-  text-align: center;
-  padding-top: 20px;
-  cursor: pointer;
 }
 
-.resumebackground:hover {
-  background-color: #1d1d1d;
+.githubbackground {
+  left: 0%;
 }
 
-.resumebackground:hover .resumetext {
-  color: white;
-}
-
-.resumetext {
-  color: transparent;
-  align-items: center;
-  font-size: 180%;
-  padding-top: 5%;
-  transition: .55s ease-out;
-}
-
-.linkedinbackground {
-  background-color: transparent;
-  transition: .5s ease-out;
-  width: 33%;
-  height: 100%;
-  position: absolute;
-  top: 0px;
+.linkedin {
   left: 66.66%;
-  text-align: center;
-  padding-top: 20px;
-  cursor: pointer;
 }
-
-.linkedinbackground:hover {
-  background-color: #1d1d1d;
-
-}
-
-.linkedinbackground:hover .linkedintext {
-  color: white;
-
-}
-
-.linkedintext {
-  color: transparent;
-  align-items: center;
-  font-size: 180%;
-  padding-top: 5%;
-  transition: .5s ease-out;
-}
-
-
 </style> 
