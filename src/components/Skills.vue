@@ -92,7 +92,7 @@
   font-family: PortfolioFont;
   font-weight: 100;
   color: #FFF;
-  padding-top: 50px;
+  padding-top: 10px;
   font-size: 40px;
 }
 
