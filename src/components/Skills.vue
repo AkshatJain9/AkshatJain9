@@ -22,7 +22,7 @@
           <img src="../assets/git.png" alt="git" width="120" height="120">
         </div> 
         <div class="img_wrapper">
-          <div class="text"> Java is my strongest programming language as I have built several applications and tools using it, inlcuding Android Applications. I have deep knowledge
+          <div class="text"> Java is my strongest programming language as I have built several applications and tools using it, including Android Applications. I have deep knowledge
             of the standard library as well as frameworks such as Spring Boot</div>
           <img src="../assets/java.png" alt="java" width="120" height="120">
         </div> 
