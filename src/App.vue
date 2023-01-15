@@ -4,9 +4,7 @@
       <Introduction />
       <Contact />
       <Skills />
-      <div class="projects">
-        <div class="projectstitle">Software Projects</div>
-      </div>
+      <div class="projectstitle">Software Projects</div>
     <Projects />
     </main>
 
@@ -137,7 +135,7 @@ body {
   font-family: PortfolioFont;
   font-weight: 100;
   color: #FFF;
-  padding-top: 100px;
+  padding-top: 150px;
   font-size: 40px;
   text-align: center;
 }

@@ -17,12 +17,12 @@
         </div> 
         <div class="img_wrapper">
           <div class="text"> I have worked with common tools such as Git and have experience in using Cloud Services on platforms such as Azure. 
-            I have experience in DevOps principles having created CI/CD pipelines with technologies such as Docker
+            I have experience in using DevOps principles having created CI/CD pipelines and also used technologies such as Docker
           </div>
           <img src="../assets/git.png" alt="git" width="120" height="120">
         </div> 
         <div class="img_wrapper">
-          <div class="text"> Java is my strongest programming language as I have built several applications and tools using it. I have deep knowledge
+          <div class="text"> Java is my strongest programming language as I have built several applications and tools using it, inlcuding Android Applications. I have deep knowledge
             of the standard library as well as frameworks such as Spring Boot</div>
           <img src="../assets/java.png" alt="java" width="120" height="120">
         </div> 
