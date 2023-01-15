@@ -135,7 +135,7 @@ body {
   font-family: PortfolioFont;
   font-weight: 100;
   color: #FFF;
-  padding-top: 150px;
+  padding-top: 125px;
   font-size: 40px;
   text-align: center;
 }
