@@ -5,7 +5,7 @@
         <div class="img_wrapper">
           <div class="text"> Having majored in Machine Learning, I am proficient in Python and its core libraries including 
           NumPy, Pandas, MPL, PyTorch and more. I also have experience in building Python backends 
-          for web applications </div>
+          for web applications using Flask </div>
           <img src="../assets/python.png" alt="python" width="120" height="120">
         </div> 
         <div class="img_wrapper">
@@ -27,7 +27,7 @@
           <img src="../assets/java.png" alt="java" width="120" height="120">
         </div> 
         <div class="img_wrapper">
-          <div class="text"> I have experience creating Web-Apps using the Vue ecosystem. I am capable
+          <div class="text"> I have experience creating Web-Apps using Vue, Angular and React. I am capable
             of writing both JavaScript and TypeScript and enjoy learning new frameworks
           </div>
           <img src="../assets/javascript.png" alt="javascript" width="120" height="120">

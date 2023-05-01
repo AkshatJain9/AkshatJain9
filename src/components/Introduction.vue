@@ -4,7 +4,7 @@
       Hi! My Name is <span class="nametext">Akshat Jain</span> 
     </div>
     <div class="description">
-      I am a Student at the Australian National University (ANU) and a Database Engineer at Services Australia
+      I am a Student at the Australian National University (ANU), Software Engineer at Services Australia and incoming Intern at Atlassian!
     </div>
   </div>
 </template>
