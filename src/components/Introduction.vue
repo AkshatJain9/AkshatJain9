@@ -4,7 +4,7 @@
       Hi! My Name is <span class="nametext">Akshat Jain</span> 
     </div>
     <div class="description">
-      I am a Student at the Australian National University (ANU), Software Engineer at Services Australia and former Intern at Atlassian!
+        I am a Software Engineer at <a href="https://sig.com" target="_blank">Susquehanna International Group (SIG)</a> and former Intern at <a href="https://www.atlassian.com" target="_blank">Atlassian</a>!
     </div>
   </div>
 </template>
