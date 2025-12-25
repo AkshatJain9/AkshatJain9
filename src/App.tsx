@@ -4,7 +4,7 @@ function App() {
 
   return (
     <>
-      <h3> Website Refactor Coming Soon </h3>
+      <h3> Website Refactor Coming Soon! </h3>
     </>
   )
 }
