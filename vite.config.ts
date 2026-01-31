@@ -3,7 +3,12 @@ import react from "@vitejs/plugin-react";
 import path from "path";
 import runtimeErrorOverlay from "@replit/vite-plugin-runtime-error-modal";
 
+// For GitHub Pages project sites: base must be '/repo-name/' (trailing slash).
+// Set VITE_BASE_PATH when building if your repo name differs.
+const base = process.env.VITE_BASE_PATH ?? "/AkshatJain9/";
+
 export default defineConfig({
+  base,
   plugins: [
     react(),
     runtimeErrorOverlay(),
