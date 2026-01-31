@@ -1,4 +1,3 @@
-set VITE_BASE_PATH=/AkshatJain9/
 call npm run build
 git add dist -f
 git commit -m "Temp deploy"

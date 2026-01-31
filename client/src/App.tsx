@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Router, Switch, Route } from "wouter";
 import { queryClient } from "./lib/queryClient";
 import { QueryClientProvider } from "@tanstack/react-query";
@@ -6,8 +7,14 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import Home from "@/pages/Home";
 import NotFound from "@/pages/not-found";
 
-// BASE_URL from Vite (e.g. /AkshatJain9/ for GitHub Pages) – required for subpath deployment
-const base = import.meta.env.BASE_URL;
+// Router base: at site root use "", else use first path segment (e.g. /AkshatJain9 for github.io/repo-name/).
+function getRouterBase(): string {
+  if (typeof window === "undefined") return "";
+  const path = window.location.pathname;
+  if (path === "/" || path === "") return "";
+  const segment = path.split("/").filter(Boolean)[0];
+  return segment ? `/${segment}` : "";
+}
 
 function AppRouter() {
   return (
@@ -19,11 +26,12 @@ function AppRouter() {
 }
 
 function App() {
+  const [routerBase] = useState(getRouterBase);
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
         <Toaster />
-        <Router base={base}>
+        <Router base={routerBase}>
           <AppRouter />
         </Router>
       </TooltipProvider>
